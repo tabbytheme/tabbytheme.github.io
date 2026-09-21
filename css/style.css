@@ -1,0 +1,511 @@
+/*------------------------------------*\
+    BASE-SETTINGS
+\*------------------------------------*/
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../font/Montserrat-Regular.eot"); /* IE9 Compat Modes */
+    src: url("../font/Montserrat-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("../font/Montserrat-Regular.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("../font/Montserrat-Regular.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("../font/Montserrat-Regular.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("../font/Montserrat-Regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+@font-face {
+    font-family: "MontserratBlack";
+    src: url("../font/Montserrat-Black.eot"); /* IE9 Compat Modes */
+    src: url("../font/Montserrat-Black.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../font/Montserrat-Black.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("../font/Montserrat-Black.woff2")
+            format("woff2"),
+        /* Super Modern Browsers */ url("../font/Montserrat-Black.ttf")
+            format("truetype"),
+        /* Safari, Android, iOS */
+            url("../font/Montserrat-Black.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+body {
+    font-family: "MontserratRegular";
+    font-size: 16px;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+a:hover,
+a:focus,
+input:focus,
+button:focus {
+    text-decoration: none !important;
+    outline: 0 !important;
+}
+
+/*------------------------------------*\
+    GLOBAL CSS
+\*------------------------------------*/
+.tabby-wrap {
+    width: 100%;
+}
+/* === Health Care Coporate === */
+.hcc-container {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    padding: 0 16px;
+}
+.hcc-img {
+    width: 100%;
+    min-height: 900px;
+    object-fit: cover;
+}
+.hcc-logo {
+    margin: 102px auto 60px auto;
+    max-width: 165px;
+    text-align: center;
+}
+.hcc-title {
+    font-family: "MontserratBlack";
+    margin: 0 auto;
+    max-width: 665px;
+    text-align: center;
+    font-size: 62px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 68px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.hcc-text {
+    text-align: center;
+    font-size: 31px;
+    color: #1a525f;
+    line-height: 37px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.hcc-counter {
+    margin: 0 auto;
+    max-width: 560px;
+    margin-bottom: 40px;
+}
+.hcc-counter div {
+    text-align: center;
+}
+.hcc-counter div b {
+    display: block;
+    font-family: "MontserratBlack";
+    font-size: 62px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 48px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.hcc-counter div span {
+    display: block;
+    font-size: 31px;
+    color: #1a525f;
+    line-height: 37px;
+    letter-spacing: 1px;
+}
+.hcc-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.hcc-menu li {
+    padding: 0 5px;
+}
+.hcc-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #ffffff, #badde7);
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c7d90;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width: 224px;
+    height: 65px;
+    border: 3px solid #98bcc8;
+    padding: 5px 15px;
+}
+.hcc-s-icon {
+    display: flex;
+    justify-content: center;
+}
+.hcc-s-icon li {
+    padding: 0 10px;
+}
+.hcc-s-icon li a {
+    display: block;
+    width: 32px;
+}
+.hcc-s-icon li a svg {
+    fill: #1a525f;
+}
+.s-modal {
+    transition-duration: 0.3s !important;
+}
+.s-modal .modal-dialog {
+    max-width: 765px;
+}
+.s-modal .modal-content {
+    background: #ebfaff;
+    border: 1px solid #18505f;
+}
+.s-modal .modal-content {
+    background: #ebfaff;
+    border: 1px solid #18505f;
+}
+.s-modal .modal-header {
+    padding: 48px 48px 20px 48px;
+}
+.s-modal .modal-body {
+    padding: 0px 48px 48px 48px;
+}
+.s-modal .modal-title {
+    font-size: 31px;
+    color: #1a525f;
+}
+.s-modal .modal-content .form-label {
+    font-size: 18px;
+    color: #1a525f;
+}
+.s-modal .modal-content .form-control {
+    border-radius: 0;
+    border: 1px solid #18505f;
+}
+.s-modal .modal-content .form-label {
+    font-size: 18px;
+    color: #1a525f;
+}
+.s-modal .modal-content .form-control::placeholder {
+    font-size: 18px;
+    color: #1a525f;
+}
+.s-modal .formEmailButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #ffffff, #badde7);
+    font-size: 21px;
+    font-weight: bold;
+    color: #1a525f;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width: 218px;
+    height: 58px;
+    border: 1px solid #18505f;
+    margin-top: 10px;
+}
+
+.s-modal .modal-body p {
+    text-align: justify;
+}
+.hcc.lg-img {
+    display: block;
+}
+.hcc-sm-img {
+    display: none;
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hcc-container {
+        left: 0;
+        right: 0;
+    }
+    .hcc-img {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        object-fit: fill;
+    }
+    .hcc-lg-img {
+        display: none;
+    }
+    .hcc-sm-img {
+        display: block;
+    }
+    .hcc-logo {
+        max-width: 114px;
+        margin: 88px auto;
+    }
+    .hcc-title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+    .hcc-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+    .hcc-counter div b {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 2px;
+    }
+    .hcc-counter div span {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    .hcc-menu li a {
+        font-size: 13px;
+        width: 84px;
+        height: 28px;
+        padding: 0;
+    }
+    .hcc-menu li:last-child a {
+        width: 98px;
+    }
+    .hcc-s-icon li a {
+        width: 20px;
+    }
+    .hcc-s-icon li a svg {
+        fill: #fff;
+    }
+    .s-modal .formEmailButton {
+        font-size: 13px;
+        width: 98px;
+        height: 28px;
+    }
+    .s-modal .modal-title {
+        font-size: 24px;
+    }
+    .s-modal .modal-content .form-label {
+        font-size: 16px;
+    }
+}
+/* === Health Care Artisty === */
+.hca {
+    background: #dbe6e5;
+}
+.hca-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    padding: 0 16px;
+}
+.hca-img {
+    width: 100%;
+    min-height: 900px;
+    object-fit: cover;
+}
+.hca-logo {
+    margin: 102px auto 100px 7%;
+    max-width: 165px;
+    text-align: center;
+}
+.hca-block {
+    max-width: 665px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 5%;
+}
+.hca-title {
+    font-family: "MontserratBlack";
+    margin: 0 auto;
+    max-width: 665px;
+    font-size: 37px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 38px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.hca-text {
+    font-size: 16px;
+    color: #1a525f;
+    line-height: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.hca-counter {
+    max-width: 350px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-right: none;
+    background: rgba(18, 69, 79, 0.25);
+}
+.hca-counter div {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 10px 0;
+}
+.hca-counter div b {
+    display: block;
+    font-family: "MontserratBlack";
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 20px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+.hca-counter div span {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+.hca-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.hcc-menu li {
+    padding: 0 5px;
+}
+.hca-menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #ffffff, #badde7);
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c7d90;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width: 166px;
+    height: 46px;
+    border: 3px solid #98bcc8;
+    padding: 5px 15px;
+    margin-left: 10px;
+}
+.hca-s-icon {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 20px 0;
+}
+.hca.lg-img {
+    display: block;
+}
+.hca-sm-img {
+    display: none;
+}
+.hca-exsm-img {
+    display: none;
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .hca-container {
+        left: 0;
+        right: 0;
+    }
+    .hca-img {
+        width: 100%;
+        min-height: 100vh;
+    }
+    .hca-logo {
+        max-width: 150px;
+        margin: 50px auto 450px auto;
+    }
+    .hca-block {
+        text-align: center;
+        margin-right: auto;
+    }
+    .hca-title {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 10px;
+    }
+    .hca-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .hca-counter {
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .hca-counter div {
+        padding: 5px 0;
+    }
+    .hca-counter div b {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .hca-counter div span {
+        font-size: 13px;
+        line-height: 18px;
+        color: #fff;
+    }
+    .hca-menu {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .hca-menu li a {
+        font-size: 13px;
+        width: 84px;
+        height: 28px;
+        padding: 0;
+    }
+    .hca-menu li:last-child a {
+        width: 98px;
+    }
+    .hca-s-icon {
+        justify-content: center;
+    }
+    .hca-s-icon li a svg {
+        fill: #1a525f;
+    }
+    .hca-lg-img {
+        display: none;
+    }
+    .hca-sm-img {
+        display: block;
+    }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hca-logo {
+        max-width: 114px;
+        margin: 50px auto 290px auto;
+    }
+    .hca-sm-img {
+        display: none;
+    }
+    .hca-exsm-img {
+        display: block;
+    }
+}
