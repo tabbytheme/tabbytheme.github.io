@@ -343,7 +343,6 @@ button:focus {
     max-width: 665px;
     font-size: 37px;
     color: #fff;
-    text-transform: uppercase;
     font-weight: normal;
     line-height: 38px;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
