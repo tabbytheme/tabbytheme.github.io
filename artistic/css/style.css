@@ -34,7 +34,6 @@
 }
 
 body {
-    font-family: "MontserratRegular";
     font-size: 16px;
     line-height: normal;
     padding: 0;
@@ -88,7 +87,6 @@ button:focus {
     text-align: center;
 }
 .hcc-title {
-    font-family: "MontserratBlack";
     margin: 0 auto;
     max-width: 665px;
     text-align: center;
@@ -119,7 +117,6 @@ button:focus {
 }
 .hcc-counter div b {
     display: block;
-    font-family: "MontserratBlack";
     font-size: 62px;
     color: #fff;
     font-weight: 700;
@@ -342,7 +339,6 @@ button:focus {
     margin-right: 5%;
 }
 .hca-title {
-    font-family: "MontserratBlack";
     margin: 0 auto;
     max-width: 665px;
     font-size: 37px;
@@ -377,7 +373,6 @@ button:focus {
 }
 .hca-counter div b {
     display: block;
-    font-family: "MontserratBlack";
     font-size: 22px;
     color: #fff;
     font-weight: 700;
